@@ -1,0 +1,14 @@
+/Users/michaelgustavsson/Desktop/Lektion-01/atm/bin/Debug/net9.0/atm
+/Users/michaelgustavsson/Desktop/Lektion-01/atm/bin/Debug/net9.0/atm.deps.json
+/Users/michaelgustavsson/Desktop/Lektion-01/atm/bin/Debug/net9.0/atm.runtimeconfig.json
+/Users/michaelgustavsson/Desktop/Lektion-01/atm/bin/Debug/net9.0/atm.dll
+/Users/michaelgustavsson/Desktop/Lektion-01/atm/bin/Debug/net9.0/atm.pdb
+/Users/michaelgustavsson/Desktop/Lektion-01/atm/obj/Debug/net9.0/atm.GeneratedMSBuildEditorConfig.editorconfig
+/Users/michaelgustavsson/Desktop/Lektion-01/atm/obj/Debug/net9.0/atm.AssemblyInfoInputs.cache
+/Users/michaelgustavsson/Desktop/Lektion-01/atm/obj/Debug/net9.0/atm.AssemblyInfo.cs
+/Users/michaelgustavsson/Desktop/Lektion-01/atm/obj/Debug/net9.0/atm.csproj.CoreCompileInputs.cache
+/Users/michaelgustavsson/Desktop/Lektion-01/atm/obj/Debug/net9.0/atm.dll
+/Users/michaelgustavsson/Desktop/Lektion-01/atm/obj/Debug/net9.0/refint/atm.dll
+/Users/michaelgustavsson/Desktop/Lektion-01/atm/obj/Debug/net9.0/atm.pdb
+/Users/michaelgustavsson/Desktop/Lektion-01/atm/obj/Debug/net9.0/atm.genruntimeconfig.cache
+/Users/michaelgustavsson/Desktop/Lektion-01/atm/obj/Debug/net9.0/ref/atm.dll
