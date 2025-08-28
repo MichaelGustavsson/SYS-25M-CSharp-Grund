@@ -1,0 +1,15 @@
+/Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-02/Intro/bin/Debug/net9.0/Intro
+/Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-02/Intro/bin/Debug/net9.0/Intro.deps.json
+/Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-02/Intro/bin/Debug/net9.0/Intro.runtimeconfig.json
+/Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-02/Intro/bin/Debug/net9.0/Intro.dll
+/Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-02/Intro/bin/Debug/net9.0/Intro.pdb
+/Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-02/Intro/obj/Debug/net9.0/Intro.GeneratedMSBuildEditorConfig.editorconfig
+/Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-02/Intro/obj/Debug/net9.0/Intro.AssemblyInfoInputs.cache
+/Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-02/Intro/obj/Debug/net9.0/Intro.AssemblyInfo.cs
+/Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-02/Intro/obj/Debug/net9.0/Intro.csproj.CoreCompileInputs.cache
+/Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-02/Intro/obj/Debug/net9.0/Intro.sourcelink.json
+/Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-02/Intro/obj/Debug/net9.0/Intro.dll
+/Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-02/Intro/obj/Debug/net9.0/refint/Intro.dll
+/Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-02/Intro/obj/Debug/net9.0/Intro.pdb
+/Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-02/Intro/obj/Debug/net9.0/Intro.genruntimeconfig.cache
+/Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-02/Intro/obj/Debug/net9.0/ref/Intro.dll
