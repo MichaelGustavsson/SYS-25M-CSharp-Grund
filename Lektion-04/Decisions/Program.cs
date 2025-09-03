@@ -127,33 +127,31 @@ class Program
         // switch statement kan komprimera en lång if och else if sats
         // =============================================================
 
-        int x = 10;
+        int x = 3;
 
         switch (x)
         {
             // if(x == 1)
             case 1:
-                Console.WriteLine("switch är nu x: {0}", x);
-                break;
             // else if(x == 2)
             case 2:
                 Console.WriteLine("switch är nu x: {0}", x);
                 break;
             // else if(x == 3)
             case 3:
-                Console.WriteLine("switch är nu x: {0}", x);
+                Console.WriteLine("switch är nu 3");
                 break;
             case 4:
-                Console.WriteLine("switch är nu x: {0}", x);
+                Console.WriteLine("switch är nu 4");
                 break;
             case 5:
-                Console.WriteLine("switch är nu x: {0}", x);
+                Console.WriteLine("switch är nu 5");
                 break;
             case 6:
-                Console.WriteLine("switch är nu x: {0}", x);
+                Console.WriteLine("switch är nu 6");
                 break;
             case 7:
-                Console.WriteLine("switch är nu x: {0}", x);
+                Console.WriteLine("switch är nu 7");
                 break;
             // else
             default:
