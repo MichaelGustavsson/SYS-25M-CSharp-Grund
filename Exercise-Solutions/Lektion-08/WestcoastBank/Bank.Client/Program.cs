@@ -28,7 +28,7 @@ class Program
             account.Deposit(50);
             account2.Withdraw(5);
             account.Deposit(75);
-            account.Withdraw(45000);
+            account.Withdraw(450);
         }
         catch (NoFundsException ex)
         {
