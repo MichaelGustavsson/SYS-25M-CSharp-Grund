@@ -2,6 +2,9 @@
 
 public class Bike : Vehicle
 {
-    public Bike(string regNo) : base(regNo) { }
-
+    public bool Basket { get; set; }
+    public override string ToString()
+    {
+        return $"Jag är en cykel: Jag har en cykelkorg: {Basket}";
+    }
 }

@@ -8,6 +8,11 @@ class Program
     {
         Car volvo = new Car("ABC123");
         Truck mack = new Truck("FGH123");
-        Bike crescent = new Bike("");
+        Vehicle crescent = new Bike();
+
+        Console.WriteLine(volvo);
+        Console.WriteLine(mack);
+        Console.WriteLine(crescent);
+
     }
 }
