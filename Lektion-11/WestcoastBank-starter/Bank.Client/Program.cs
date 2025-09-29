@@ -11,6 +11,18 @@ class Program
         // Presentera alla befintliga transaktioner...
         // ...
         BankAccount account = new();
+
+        Console.WriteLine("");
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("--------------------------------------------------------------------------------");
+        foreach (var trx in account.Transactions)
+        {
+            Console.WriteLine(trx.ToString());
+        }
+        Console.WriteLine("--------------------------------------------------------------------------------");
+        Console.ResetColor();
+        Console.WriteLine("");
+
         BankAccount account2 = new(500);
         SavingsAccount savingsAccount = new(1500);
 

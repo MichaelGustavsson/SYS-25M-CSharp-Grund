@@ -6,4 +6,9 @@ public class FileStorage
     {
         File.AppendAllText(path, message);
     }
+
+    public static IList<string> ReadFile(string path)
+    {
+        return File.ReadAllLines(path);
+    }
 }
