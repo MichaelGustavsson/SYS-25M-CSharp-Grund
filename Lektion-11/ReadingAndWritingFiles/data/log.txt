@@ -1,0 +1,2 @@
+Använder StreamWriter till skriva till fil.
+Kör en gång till!

@@ -1,15 +1,9 @@
 ﻿namespace Domain;
 
-public class Private : Customer
+public class Private(string firstName, string lastName) : Customer
 {
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-
-    public Private(string firstName, string lastName)
-    {
-        FirstName = firstName;
-        LastName = lastName;
-    }
+    public string FirstName { get; set; } = firstName;
+    public string LastName { get; set; } = lastName;
 
     public override string ToString()
     {

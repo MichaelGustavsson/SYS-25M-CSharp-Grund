@@ -46,6 +46,7 @@ class Program
         // Next lets try with a business customer...
         Customer customer_2 = new Business("Skaftö Bageri")
         {
+            Reference = "Michael Gustavsson",
             DeliveryAddress = new Address { AddressLine = "Bagaregatan 15", PostalCode = "444 21", City = "Smörriket" },
             InvoiceAddress = new Address { AddressLine = "Bagaregatan 12", PostalCode = "444 21", City = "Smörriket" }
         };

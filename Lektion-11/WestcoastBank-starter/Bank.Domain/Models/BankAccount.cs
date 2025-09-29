@@ -36,7 +36,11 @@ public class BankAccount : Account
 
     public override void Deposit(decimal amount)
     {
-        Transactions.Add(new Transaction(amount));
+        Transaction transaction = new(amount);
+        Transactions.Add(transaction);
+
+        string path = $"{Environment.CurrentDirectory}/Data/Transactions.txt";
+        File.AppendAllText(path, $"{transaction}\n");
     }
 
     public override void Withdraw(decimal amount)
@@ -51,6 +55,11 @@ public class BankAccount : Account
             amount = 0 - amount;
         }
 
-        Transactions.Add(new Transaction(amount));
+        Transaction transaction = new(amount);
+        Transactions.Add(transaction);
+        Transactions.Add(transaction);
+
+        string path = $"{Environment.CurrentDirectory}/Data/Transactions.txt";
+        File.AppendAllText(path, $"{transaction}\n");
     }
 }
