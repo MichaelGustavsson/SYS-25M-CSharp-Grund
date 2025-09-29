@@ -8,16 +8,20 @@ class Program
 {
     static void Main()
     {
+        // Presentera alla befintliga transaktioner...
+        // ...
         BankAccount account = new();
         BankAccount account2 = new(500);
         SavingsAccount savingsAccount = new(1500);
 
-        Private michael = new("Michael", "Gustavsson", "11112233-4444");
-        michael.Address = new Address
+        Private michael = new("Michael", "Gustavsson", "11112233-4444")
         {
-            AddressLine = "Gatan 1",
-            PostalCode = "12345",
-            City = "Staden"
+            Address = new Address
+            {
+                AddressLine = "Gatan 1",
+                PostalCode = "12345",
+                City = "Staden"
+            }
         };
 
         account.Owner = michael;

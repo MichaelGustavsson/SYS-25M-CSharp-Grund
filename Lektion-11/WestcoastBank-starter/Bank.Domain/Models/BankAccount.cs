@@ -1,24 +1,13 @@
 
 using Bank.Domain.Utilities;
+using Bank.Persistence;
 
 namespace Bank.Domain.Models;
 
 public class BankAccount : Account
 {
+    readonly string _path = $"{Environment.CurrentDirectory}/Data/Transactions.txt";
     public override string AccountNumber => GenerateAccountNumber();
-
-    // public override decimal Balance
-    // {
-    //     get
-    //     {
-    //         decimal sum = 0;
-    //         foreach (var trx in Transactions)
-    //         {
-    //             sum += trx.Amount;
-    //         }
-    //         return sum;
-    //     }
-    // }
 
     public override Customer? Owner { get; set; }
     public override DateTime CreatedDate { get; set; }
@@ -39,8 +28,7 @@ public class BankAccount : Account
         Transaction transaction = new(amount);
         Transactions.Add(transaction);
 
-        string path = $"{Environment.CurrentDirectory}/Data/Transactions.txt";
-        File.AppendAllText(path, $"{transaction}\n");
+        FileStorage.WriteFile(_path, $"{transaction}\n");
     }
 
     public override void Withdraw(decimal amount)
@@ -57,9 +45,7 @@ public class BankAccount : Account
 
         Transaction transaction = new(amount);
         Transactions.Add(transaction);
-        Transactions.Add(transaction);
 
-        string path = $"{Environment.CurrentDirectory}/Data/Transactions.txt";
-        File.AppendAllText(path, $"{transaction}\n");
+        FileStorage.WriteFile(_path, $"{transaction}\n");
     }
 }
