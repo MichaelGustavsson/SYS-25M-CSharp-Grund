@@ -1,0 +1,9 @@
+@model List<domain.Product>
+
+<h1>Våra produkter</h1>
+
+<div>
+    @foreach(var product in Model){
+        <p>@product.Name</p>
+    }
+</div>

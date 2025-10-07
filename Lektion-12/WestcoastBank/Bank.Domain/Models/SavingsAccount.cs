@@ -16,13 +16,11 @@ public class SavingsAccount : BankAccount
             return sum * (1 + InterestRate);
         }
     }
-
-    public SavingsAccount(decimal initialBalance)
+    public SavingsAccount(decimal initialBalance) : base(initialBalance)
     {
         InterestRate = 0.0175M;
         Transactions = [new Transaction(initialBalance)];
     }
-
     public override string ToString()
     {
         return $"Kontodatum: {CreatedDate:d} - Kontonummer: {AccountNumber} - Saldo: {Balance} - Räntesats: {InterestRate}";

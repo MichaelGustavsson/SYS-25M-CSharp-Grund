@@ -3,15 +3,45 @@ using Bank.Domain.Utilities;
 
 namespace Bank.Domain;
 
-public abstract class Account
+public class Account
 {
-    public abstract string AccountNumber { get; }
+    public string AccountNumber => GenerateAccountNumber();
+    public Customer Owner { get; set; }
+    public DateTime CreatedDate { get; set; }
+    public List<Transaction> Transactions { get; set; } = [];
 
-    public abstract Customer? Owner { get; set; }
-    public abstract DateTime CreatedDate { get; set; }
-    public abstract List<Transaction> Transactions { get; set; }
-    public abstract void Deposit(decimal amount);
-    public abstract void Withdraw(decimal amount);
+    public Account()
+    {
+        Owner = new Customer();
+        CreatedDate = DateTime.Now;
+    }
+
+    public Account(decimal initialBalance) : this()
+    {
+        Transactions.Add(new Transaction(initialBalance));
+    }
+
+    public void Deposit(decimal amount)
+    {
+        Transaction transaction = new(amount);
+        Transactions.Add(transaction);
+    }
+
+    public virtual void Withdraw(decimal amount)
+    {
+        if (Balance < amount)
+        {
+            throw new NoFundsException("Uttag medges ej.", amount, Balance);
+        }
+
+        if (amount > 0)
+        {
+            amount = 0 - amount;
+        }
+
+        Transaction transaction = new(amount);
+        Transactions.Add(transaction);
+    }
 
     // Composed property
     public virtual decimal Balance

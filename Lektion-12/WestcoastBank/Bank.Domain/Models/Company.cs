@@ -2,16 +2,10 @@
 
 namespace Bank.Domain;
 
-public class Company : Customer
+public class Company(string name, string orgNumber) : Customer
 {
-    public string Name { get; set; }
-    public string OrganizationNumber { get; set; }
-
-    public Company(string name, string orgNumber)
-    {
-        Name = name;
-        OrganizationNumber = orgNumber;
-    }
+    public string Name { get; set; } = name;
+    public string OrganizationNumber { get; set; } = orgNumber;
 
     public override string ToString()
     {

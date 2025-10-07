@@ -1,11 +1,7 @@
 namespace Bank.Domain.Models;
 
-public abstract class Customer
+public class Customer
 {
-    public Address? Address { get; set; }
 
-    public Customer()
-    {
-        Address = new Address();
-    }
+    public Address Address { get; set; } = new Address();
 }

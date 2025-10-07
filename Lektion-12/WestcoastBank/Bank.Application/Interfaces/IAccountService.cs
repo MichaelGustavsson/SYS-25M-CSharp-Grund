@@ -1,6 +1,10 @@
-﻿namespace Bank.Application;
+﻿using Bank.Domain;
+
+namespace Bank.Application;
 
 public interface IAccountService
 {
-    IList<string> FetchTransactions();
+    string FetchTransactions();
+    void SaveAccount(Account account);
+    Account GetAccount();
 }

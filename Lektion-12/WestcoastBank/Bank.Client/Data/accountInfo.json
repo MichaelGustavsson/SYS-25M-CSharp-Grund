@@ -1,0 +1,26 @@
+{
+  "accountNumber": "5578-75361190",
+  "owner": {
+    "firstName": "Kalle",
+    "lastName": "Olsson",
+    "socialSecurityNumber": "1990-02-12",
+    "address": {
+      "addressLine": "Hålvägen 1",
+      "postalCode": "111 22",
+      "city": "Hålan",
+      "country": "Sverige"
+    }
+  },
+  "createdDate": "2025-10-01T19:16:41.900399+02:00",
+  "transactions": [
+    {
+      "transactionDate": "2025-10-01T19:16:41.935749+02:00",
+      "amount": 500
+    },
+    {
+      "transactionDate": "2025-10-01T19:16:41.935759+02:00",
+      "amount": 500
+    }
+  ],
+  "balance": 1000
+}
