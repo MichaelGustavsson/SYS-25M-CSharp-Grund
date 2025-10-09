@@ -20,5 +20,21 @@ namespace MyApp.Namespace
             return View();
         }
 
+        [HttpPost]
+        public ActionResult Add(Product product)
+        {
+            // 1.
+            var wwwroot = _environment.WebRootPath;
+            var products = Storage.ReadProductsJson($"{wwwroot}/Data/Products.json");
+
+            // 2.
+            products.Add(product);
+
+            // 3.
+            Storage.WriteProductsJson($"{wwwroot}/Data/products.json", products);
+
+            return RedirectToAction("Index");
+        }
+
     }
 }

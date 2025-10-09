@@ -128,7 +128,6 @@
 /Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-14/eShop/web/obj/Debug/net9.0/scopedcss/bundle/web.styles.css
 /Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-14/eShop/web/obj/Debug/net9.0/scopedcss/projectbundle/web.bundle.scp.css
 /Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-14/eShop/web/obj/Debug/net9.0/compressed/rx872ba60m-b9sayid5wm.gz
-/Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-14/eShop/web/obj/Debug/net9.0/compressed/mj73liio2z-841fjzt163.gz
 /Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-14/eShop/web/obj/Debug/net9.0/compressed/1a1hbozscg-61n19gt1b8.gz
 /Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-14/eShop/web/obj/Debug/net9.0/compressed/x1ysavzp2q-xtxxf3hu2r.gz
 /Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-14/eShop/web/obj/Debug/net9.0/compressed/dl5z5kbzkv-bqjiyaj88i.gz
@@ -202,3 +201,4 @@
 /Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-14/eShop/web/obj/Debug/net9.0/web.pdb
 /Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-14/eShop/web/obj/Debug/net9.0/web.genruntimeconfig.cache
 /Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-14/eShop/web/obj/Debug/net9.0/ref/web.dll
+/Users/michaelgustavsson/Documents/Development/Courses/SYSÄ25M/Programmering-C#-Grund/GitHub/Lektion-14/eShop/web/obj/Debug/net9.0/compressed/mj73liio2z-4ev2kjv5tr.gz
