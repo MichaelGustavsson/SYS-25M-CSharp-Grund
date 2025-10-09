@@ -10,11 +10,5 @@
     "name": "Spikpistol",
     "description": "",
     "price": 4995
-  },
-  {
-    "itemNumber": "GG-66789",
-    "name": "Ny produkt",
-    "description": "Test",
-    "price": 1295
   }
 ]

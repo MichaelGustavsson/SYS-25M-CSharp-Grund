@@ -1,0 +1,30 @@
+[
+  {
+    "firstName": "Edvin",
+    "lastName": "Persson",
+    "email": "edvin.persson@gmail.com",
+    "phone": "070-1122334",
+    "addresses": [
+      {
+        "addressLine": "Gångvägen 1",
+        "postalCode": "111 22",
+        "city": "Viken"
+      }
+    ],
+    "OrderHistories": []
+  },
+  {
+    "firstName": "Helene",
+    "lastName": "Ivarsson",
+    "email": "helene.ivarsson@gmail.com",
+    "phone": "0702-9988765",
+    "addresses": [
+      {
+        "addressLine": "Cykelstigen 1",
+        "postalCode": "444 22",
+        "city": "Smygen"
+      }
+    ],
+    "OrderHistories": []
+  }
+]
