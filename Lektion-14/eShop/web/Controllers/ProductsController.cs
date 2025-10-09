@@ -7,12 +7,9 @@ namespace MyApp.Namespace
     {
         private readonly IWebHostEnvironment _environment = environment;
 
-        // GET: ProductsController
         public ActionResult Index()
         {
-            var wwwroot = _environment.WebRootPath;
-            var products = Storage.ReadProductsJson($"{wwwroot}/Data/Products.json");
-            return View(products);
+            return View(GetProducts());
         }
 
         public ActionResult Add()
@@ -23,25 +20,19 @@ namespace MyApp.Namespace
         [HttpPost]
         public ActionResult Add(Product product)
         {
-            // 1.
-            var wwwroot = _environment.WebRootPath;
-            var products = Storage.ReadProductsJson($"{wwwroot}/Data/Products.json");
-
+            // 1.            
+            var products = GetProducts();
             // 2.
             products.Add(product);
-
-            // 3.
-            Storage.WriteProductsJson($"{wwwroot}/Data/products.json", products);
+            // 3.            
+            SaveProducts(products);
 
             return RedirectToAction("Index");
         }
 
         public ActionResult Edit(string id)
         {
-            var wwwroot = _environment.WebRootPath;
-            var products = Storage.ReadProductsJson($"{wwwroot}/Data/Products.json");
-
-            foreach (var product in products)
+            foreach (var product in GetProducts())
             {
                 if (product.ItemNumber == id)
                 {
@@ -55,10 +46,8 @@ namespace MyApp.Namespace
         public ActionResult Edit(Product product)
         {
             List<Product> list = [];
-            var wwwroot = _environment.WebRootPath;
-            var products = Storage.ReadProductsJson($"{wwwroot}/Data/Products.json");
 
-            foreach (var p in products)
+            foreach (var p in GetProducts())
             {
                 if (p.ItemNumber != product.ItemNumber)
                 {
@@ -67,9 +56,39 @@ namespace MyApp.Namespace
             }
 
             list.Add(product);
-            Storage.WriteProductsJson($"{wwwroot}/Data/products.json", list);
+            SaveProducts(list);
 
             return RedirectToAction("Index");
+        }
+
+        public ActionResult Delete(string id)
+        {
+            List<Product> list = [];
+
+            foreach (var p in GetProducts())
+            {
+                if (p.ItemNumber != id)
+                {
+                    list.Add(p);
+                }
+            }
+
+            SaveProducts(list);
+
+            return RedirectToAction("Index");
+        }
+
+        private List<Product> GetProducts()
+        {
+            var wwwroot = _environment.WebRootPath;
+            var products = Storage.ReadProductsJson($"{wwwroot}/Data/Products.json");
+            return products;
+        }
+
+        private void SaveProducts(List<Product> products)
+        {
+            var wwwroot = _environment.WebRootPath;
+            Storage.WriteProductsJson($"{wwwroot}/Data/products.json", products);
         }
     }
 }

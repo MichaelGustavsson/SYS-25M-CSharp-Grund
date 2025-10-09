@@ -6,21 +6,15 @@
     "price": 495
   },
   {
-    "itemNumber": "AA222",
-    "name": "Skruvdragare Dewalt",
-    "description": "",
-    "price": 2995
-  },
-  {
     "itemNumber": "AA333",
     "name": "Spikpistol",
     "description": "",
     "price": 4995
   },
   {
-    "itemNumber": "FF-777777",
-    "name": "Bordsåg",
-    "description": "Unikt pris köööp",
-    "price": 2390
+    "itemNumber": "GG-66789",
+    "name": "Ny produkt",
+    "description": "Test",
+    "price": 1295
   }
 ]
