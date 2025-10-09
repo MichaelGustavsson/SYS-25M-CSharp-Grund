@@ -11,7 +11,7 @@
         "city": "Viken"
       }
     ],
-    "OrderHistories": []
+    "orderHistories": []
   },
   {
     "firstName": "Helene",
@@ -25,6 +25,6 @@
         "city": "Smygen"
       }
     ],
-    "OrderHistories": []
+    "orderHistories": []
   }
 ]
