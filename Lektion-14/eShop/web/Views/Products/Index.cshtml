@@ -1,0 +1,31 @@
+@using domain
+@model List<domain.Product>
+
+<h1>Våra produkter</h1>
+
+<div>
+    <a asp-action="Add">Lägg till ny produkt</a>
+</div>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Artikelnummer</th>
+                <th>Produktnamn</th>
+                <th>Pris</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Product product in Model)
+            {
+                <tr>
+                    <td>@product.ItemNumber</td>
+                    <td>@product.Name</td>
+                    <td>@product.Price</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
