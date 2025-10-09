@@ -1,14 +1,14 @@
 [
   {
-    "itemNumber": "AA111",
-    "name": "Handslägga",
-    "description": "",
-    "price": 495
-  },
-  {
     "itemNumber": "AA333",
     "name": "Spikpistol",
     "description": "",
     "price": 4995
+  },
+  {
+    "itemNumber": "AA111",
+    "name": "Handslägga",
+    "description": null,
+    "price": 495
   }
 ]

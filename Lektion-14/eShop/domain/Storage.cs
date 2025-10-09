@@ -3,7 +3,7 @@ using System.Text.Json;
 
 namespace domain;
 
-public class Storage
+public class Storage<T>
 {
     private static JsonSerializerOptions _options = new()
     {
@@ -13,16 +13,16 @@ public class Storage
         PropertyNameCaseInsensitive = true
     };
 
-    public static List<Product> ReadProductsJson(string path)
+    public static List<T> ReadJson(string path)
     {
         var json = File.ReadAllText(path);
-        var products = JsonSerializer.Deserialize<List<Product>>(json, _options);
-        return products ?? [];
+        var data = JsonSerializer.Deserialize<List<T>>(json, _options);
+        return data ?? [];
     }
 
-    public static void WriteProductsJson(string path, List<Product> products)
+    public static void WriteJson(string path, List<T> data)
     {
-        var json = JsonSerializer.Serialize(products, _options);
+        var json = JsonSerializer.Serialize(data, _options);
         File.WriteAllText(path, json);
     }
 }

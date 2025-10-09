@@ -81,14 +81,14 @@ namespace MyApp.Namespace
         private List<Product> GetProducts()
         {
             var wwwroot = _environment.WebRootPath;
-            var products = Storage.ReadProductsJson($"{wwwroot}/Data/Products.json");
+            var products = Storage<Product>.ReadJson($"{wwwroot}/Data/Products.json");
             return products;
         }
 
         private void SaveProducts(List<Product> products)
         {
             var wwwroot = _environment.WebRootPath;
-            Storage.WriteProductsJson($"{wwwroot}/Data/products.json", products);
+            Storage<Product>.WriteJson($"{wwwroot}/Data/products.json", products);
         }
     }
 }
