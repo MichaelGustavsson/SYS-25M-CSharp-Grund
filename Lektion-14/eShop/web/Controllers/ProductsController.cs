@@ -36,5 +36,40 @@ namespace MyApp.Namespace
             return RedirectToAction("Index");
         }
 
+        public ActionResult Edit(string id)
+        {
+            var wwwroot = _environment.WebRootPath;
+            var products = Storage.ReadProductsJson($"{wwwroot}/Data/Products.json");
+
+            foreach (var product in products)
+            {
+                if (product.ItemNumber == id)
+                {
+                    return View("Edit", product);
+                }
+            }
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Product product)
+        {
+            List<Product> list = [];
+            var wwwroot = _environment.WebRootPath;
+            var products = Storage.ReadProductsJson($"{wwwroot}/Data/Products.json");
+
+            foreach (var p in products)
+            {
+                if (p.ItemNumber != product.ItemNumber)
+                {
+                    list.Add(p);
+                }
+            }
+
+            list.Add(product);
+            Storage.WriteProductsJson($"{wwwroot}/Data/products.json", list);
+
+            return RedirectToAction("Index");
+        }
     }
 }
