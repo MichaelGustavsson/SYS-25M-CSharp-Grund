@@ -20,11 +20,8 @@ namespace MyApp.Namespace
         [HttpPost]
         public ActionResult Add(Product product)
         {
-            // 1.            
             var products = GetProducts();
-            // 2.
             products.Add(product);
-            // 3.            
             SaveProducts(products);
 
             return RedirectToAction("Index");
