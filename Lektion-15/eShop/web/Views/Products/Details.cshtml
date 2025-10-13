@@ -1,0 +1,17 @@
+@model domain.Product
+
+<div><a asp-action="Index">Tillbaka till listan</a></div>
+
+<h1>Produkt uppgifter - @Model.Name</h1>
+
+<div class="container">
+    <span>Artikelnummer:</span>
+    <p>@Model.ItemNumber</p>
+    <span>Produktnamn:</span>
+    <p>@Model.Name</p>
+    <span>Beskrivning:</span>
+    <p>@Model.Description</p>
+    <span>Pris:</span>
+    <p>@Model.Price</p>
+
+</div>

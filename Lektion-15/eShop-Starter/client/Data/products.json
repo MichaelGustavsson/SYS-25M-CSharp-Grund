@@ -1,0 +1,17 @@
+[
+  {
+    "itemNumber": "AA111",
+    "name": "Handslägga",
+    "price": 495
+  },
+  {
+    "itemNumber": "AA222",
+    "name": "Skruvdragare Dewalt",
+    "price": 2995
+  },
+  {
+    "itemNumber": "AA333",
+    "name": "Spikpistol",
+    "price": 4995
+  }
+]

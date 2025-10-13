@@ -1,0 +1,62 @@
+[
+  {
+    "id": "2a672d3151c3490bba3cd270beada470",
+    "firstName": "Edvin",
+    "lastName": "Persson",
+    "phone": "070-1122334",
+    "email": "edvin.persson@gmail.com",
+    "addresses": [
+      {
+        "addressType": 0,
+        "addressLine": "Gångvägen 1",
+        "postalCode": "111 22",
+        "city": "Viken"
+      }
+    ],
+    "orderHistories": []
+  },
+  {
+    "id": "a5b0e46eca61427b9fa615610ceecb8c",
+    "firstName": "Helene",
+    "lastName": "Ivarsson",
+    "phone": "0702-9988765",
+    "email": "helene.ivarsson@gmail.com",
+    "addresses": [
+      {
+        "addressType": 1,
+        "addressLine": "Cykelstigen 1",
+        "postalCode": "444 22",
+        "city": "Smygen"
+      },
+      {
+        "addressType": 2,
+        "addressLine": "Box 1",
+        "postalCode": "444 21",
+        "city": "Smygen"
+      }
+    ],
+    "orderHistories": []
+  },
+  {
+    "id": "ed0a27a38afe45238ad0212484cf7b66",
+    "firstName": "Michael",
+    "lastName": "Gustavsson",
+    "phone": "0702908717",
+    "email": "michael.gustavsson@softtech-dev.se",
+    "addresses": [
+      {
+        "addressType": 1,
+        "addressLine": "Lövhammarsvägen 30",
+        "postalCode": "444 46",
+        "city": "Stenungsund"
+      },
+      {
+        "addressType": 2,
+        "addressLine": "Munkerödsvägen 15",
+        "postalCode": "44432",
+        "city": "Stenungsund"
+      }
+    ],
+    "orderHistories": []
+  }
+]

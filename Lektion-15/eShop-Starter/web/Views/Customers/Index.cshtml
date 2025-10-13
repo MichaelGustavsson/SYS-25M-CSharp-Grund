@@ -1,0 +1,40 @@
+@model List<domain.Customer>
+
+@{
+    ViewData["Title"] = "Kunder";
+}
+<h1>Kunder</h1>
+
+<div>
+    <a asp-action="Add">Lägg till ny kund</a>
+</div>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Kundnamn</th>
+                <th>Telefon</th>
+                <th>E-Post</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var customer in Model)
+            {
+                <tr>
+                    <td>@customer.FirstName @customer.LastName</td>
+                    <td>@customer.Phone</td>
+                    <td>@customer.Email</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@customer.Id"><i class="fa-light fa-pen-to-square"></i></a> |
+                        <a asp-action="Details" asp-route-id="@customer.Id"><i class="fa-light fa-file-circle-info"></i></a>
+                        |
+                        <a asp-action="Delete" asp-route-id="@customer.Id"><i style="color:red"
+                                class="fa-light fa-trash-can"></i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
