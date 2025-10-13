@@ -41,20 +41,42 @@
     "id": "ed0a27a38afe45238ad0212484cf7b66",
     "firstName": "Michael",
     "lastName": "Gustavsson",
-    "phone": "0702908717",
+    "phone": "0702908718",
     "email": "michael.gustavsson@softtech-dev.se",
     "addresses": [
       {
         "addressType": 1,
-        "addressLine": "Lövhammarsvägen 30",
+        "addressLine": "Lövhammarsvägen 35",
         "postalCode": "444 46",
         "city": "Stenungsund"
       },
       {
         "addressType": 2,
-        "addressLine": "Munkerödsvägen 15",
+        "addressLine": "Munkerödsvägen 55",
         "postalCode": "44432",
         "city": "Stenungsund"
+      }
+    ],
+    "orderHistories": []
+  },
+  {
+    "id": "8be9034a23b045ef9a7eb5a1cc39fa68",
+    "firstName": "Nils",
+    "lastName": "Nilsson",
+    "phone": "0730-889900",
+    "email": "nils.nilsson@gmail.com",
+    "addresses": [
+      {
+        "addressType": 1,
+        "addressLine": "Gatan 2",
+        "postalCode": "123 45",
+        "city": "Staden"
+      },
+      {
+        "addressType": 2,
+        "addressLine": "Gatan 1",
+        "postalCode": "123 45",
+        "city": "Staden"
       }
     ],
     "orderHistories": []

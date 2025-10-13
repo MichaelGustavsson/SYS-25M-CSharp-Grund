@@ -9,8 +9,9 @@ public class CustomersController(IWebHostEnvironment environment) : Controller
 
     public ActionResult Index()
     {
-        var customers = JsonData<Customer>.Get($"{_root}/Data/Customers.json");
-        return View(customers);
+        // var customers = JsonData<Customer>.Get($"{_root}/Data/Customers.json");
+        // return View(customers);
+        return View(JsonData<Customer>.Get($"{_root}/Data/Customers.json"));
     }
 
     public ActionResult Add()
@@ -90,6 +91,11 @@ public class CustomersController(IWebHostEnvironment environment) : Controller
             {
                 customer = c;
             }
+        }
+
+        if (customer.Addresses.Count == 1)
+        {
+            customer.Addresses.Add(new());
         }
 
         return View(customer);

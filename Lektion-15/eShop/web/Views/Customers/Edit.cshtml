@@ -1,7 +1,7 @@
 @model domain.Customer
 
 @{
-    ViewData["Title"] = "Uppdater kund";
+    ViewData["Title"] = "Uppdatera kund";
 }
 
 <h1>Uppdatera kunduppgifter</h1>
@@ -45,7 +45,7 @@
             <input type="text" asp-for="Addresses[1].AddressLine" class="form-control" />
         </div>
         <div class="form-group">
-            <label for="Addresses[1]?.PostalCode" class="control-label">Postnummer:</label>
+            <label for="Addresses[1].PostalCode" class="control-label">Postnummer:</label>
             <input type="text" asp-for="Addresses[1].PostalCode" class="form-control" />
         </div>
         <div class="form-group">
