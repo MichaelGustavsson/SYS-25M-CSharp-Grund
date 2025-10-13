@@ -54,6 +54,7 @@ public class CustomersController(IWebHostEnvironment environment) : Controller
             customer.Addresses.Add(new());
         }
 
+        // Skickar ett kund objekt till vyn...
         return View(customer);
     }
 

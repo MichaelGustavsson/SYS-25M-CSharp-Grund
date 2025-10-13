@@ -27,6 +27,58 @@ public class ProductsController(IWebHostEnvironment environment) : Controller
         return RedirectToAction("Index");
     }
 
+    public ActionResult AddToCart(string itemNumber)
+    {
+        /* Skriv logik som sparar ner kund, produkt och antalet produkter i Cart.json */
+        var cartList = JsonData<Cart>.Get($"{_root}/Data/Cart.json");
+        var customers = JsonData<Customer>.Get($"{_root}/Data/Customers.json");
+        var products = JsonData<Product>.Get($"{_root}/Data/Products.json");
+
+        // Spara undan produkter i kundvagnen...
+        var productsInCart = cartList[0].Products;
+
+        // Quick and Dirty lösning...
+        // Skapa en tom array av typen List<Cart> och skriv ner den
+        // innan vi går vidare...
+        cartList = [];
+        // Skriv ner cartList till filen Cart.json...
+        JsonData<Cart>.Save($"{_root}/Data/Cart.json", cartList);
+
+        Product product = new();
+
+        foreach (var p in products)
+        {
+            if (p.ItemNumber == itemNumber)
+            {
+                product = p;
+            }
+        }
+
+        Console.WriteLine(product);
+
+        Cart cart = new Cart();
+
+        foreach (var c in customers)
+        {
+            if (c.Id == cart.Customer.Id)
+            {
+                cart.Customer = c;
+            }
+        }
+
+        productsInCart.Add(product);
+        cart.Products = productsInCart;
+        cart.Quantity = cart.Products.Count;
+
+        // Lägg till en ny kundvagn till inläst lista av kundvagnar...
+        cartList.Add(cart);
+
+        // Skriv ner cartList till filen Cart.json...
+        JsonData<Cart>.Save($"{_root}/Data/Cart.json", cartList);
+
+        return RedirectToAction("Index");
+    }
+
     public ActionResult Edit(string id)
     {
         foreach (var product in JsonData<Product>.Get($"{_root}/Data/Products.json"))

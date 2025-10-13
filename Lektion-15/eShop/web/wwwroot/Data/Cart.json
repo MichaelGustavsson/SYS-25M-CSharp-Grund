@@ -1,1 +1,71 @@
-[]
+[
+  {
+    "quantity": 8,
+    "customer": {
+      "id": "2a672d3151c3490bba3cd270beada470",
+      "firstName": "Edvin",
+      "lastName": "Persson",
+      "phone": "070-1122334",
+      "email": "edvin.persson@gmail.com",
+      "addresses": [
+        {
+          "addressType": 0,
+          "addressLine": "Gångvägen 1",
+          "postalCode": "111 22",
+          "city": "Viken"
+        }
+      ],
+      "orderHistories": []
+    },
+    "products": [
+      {
+        "itemNumber": "AA333",
+        "name": "Spikpistol",
+        "description": null,
+        "price": 3995
+      },
+      {
+        "itemNumber": "AA111",
+        "name": "Handslägga",
+        "description": null,
+        "price": 495
+      },
+      {
+        "itemNumber": "AA111",
+        "name": "Handslägga",
+        "description": null,
+        "price": 495
+      },
+      {
+        "itemNumber": "AA111",
+        "name": "Handslägga",
+        "description": null,
+        "price": 495
+      },
+      {
+        "itemNumber": "AA111",
+        "name": "Handslägga",
+        "description": null,
+        "price": 495
+      },
+      {
+        "itemNumber": "AA111",
+        "name": "Handslägga",
+        "description": null,
+        "price": 495
+      },
+      {
+        "itemNumber": "AA333",
+        "name": "Spikpistol",
+        "description": null,
+        "price": 3995
+      },
+      {
+        "itemNumber": "AA333",
+        "name": "Spikpistol",
+        "description": null,
+        "price": 3995
+      }
+    ]
+  }
+]
