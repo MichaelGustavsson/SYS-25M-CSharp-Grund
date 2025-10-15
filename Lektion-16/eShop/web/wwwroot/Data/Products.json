@@ -1,0 +1,23 @@
+[
+  {
+    "itemNumber": "AA111",
+    "name": "Handslägga",
+    "description": null,
+    "price": 495,
+    "quantity": 0
+  },
+  {
+    "itemNumber": "AA333",
+    "name": "Spikpistol",
+    "description": null,
+    "price": 3995,
+    "quantity": 0
+  },
+  {
+    "itemNumber": "AAA-666",
+    "name": "Tigersåg Dewalt",
+    "description": "Unikt pris köööp",
+    "price": 2995,
+    "quantity": 0
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "orderNumber": "ES1797869",
+    "orderDate": "2025-10-15T14:02:22.093061+02:00",
+    "discountCode": "",
+    "orderValue": 0,
+    "orderItems": [
+      {
+        "discount": 0,
+        "quantity": 1,
+        "product": {
+          "itemNumber": "AA111",
+          "name": "Handslägga",
+          "description": null,
+          "price": 495,
+          "quantity": 1
+        }
+      },
+      {
+        "discount": 0,
+        "quantity": 1,
+        "product": {
+          "itemNumber": "AA333",
+          "name": "Spikpistol",
+          "description": null,
+          "price": 3995,
+          "quantity": 1
+        }
+      }
+    ],
+    "customer": {
+      "id": "2a672d3151c3490bba3cd270beada470",
+      "firstName": "Edvin",
+      "lastName": "Persson",
+      "phone": "070-1122334",
+      "email": "edvin.persson@gmail.com",
+      "addresses": [
+        {
+          "addressType": 0,
+          "addressLine": "Gångvägen 1",
+          "postalCode": "111 22",
+          "city": "Viken"
+        }
+      ],
+      "orderHistories": [
+        {
+          "orderNumber": "ES6035002",
+          "orderDate": "2025-10-15T14:01:42.081081+02:00",
+          "status": 1,
+          "orderItems": [
+            {
+              "discount": 0,
+              "quantity": 2,
+              "product": {
+                "itemNumber": "AAA-666",
+                "name": "Tigersåg Dewalt",
+                "description": "Unikt pris köööp",
+                "price": 2995,
+                "quantity": 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

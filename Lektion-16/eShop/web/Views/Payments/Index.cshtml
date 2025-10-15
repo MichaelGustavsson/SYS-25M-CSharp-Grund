@@ -1,0 +1,83 @@
+@model domain.Order
+
+<h1>Kassa</h1>
+<h5>Beställning</h5>
+<div>
+    <span>Beställningsdatum:</span>
+    <p>@Model.OrderDate.ToShortDateString()</p>
+</div>
+<div>
+    <span>Beställningsnummer:</span>
+    <p>@Model.OrderNumber</p>
+</div>
+
+<h6>Kunduppgifter:</h6>
+<div>
+    <span>Namn:</span>
+    <p>@Model.Customer.FirstName @Model.Customer.LastName</p>
+</div>
+<div>
+    <span>Telefon:</span>
+    <p>@Model.Customer.Phone</p>
+</div>
+<div>
+    <span>Email:</span>
+    <p>@Model.Customer.Email</p>
+</div>
+
+<h6>Adressuppgifter</h6>
+@if (Model.Customer.Addresses.Count > 1)
+{
+    <div>
+        <span>Faktura adress:</span>
+        <p>Adress: @Model.Customer.Addresses.First().AddressLine</p>
+        <p>Postnummer: @Model.Customer.Addresses.First().PostalCode</p>
+        <p>Postort: @Model.Customer.Addresses.First().City</p>
+    </div>
+
+    <div>
+        <span>Leverans adress:</span>
+        <p>Adress: @Model.Customer.Addresses.Last().AddressLine</p>
+        <p>Postnummer: @Model.Customer.Addresses.Last().PostalCode</p>
+        <p>Postort: @Model.Customer.Addresses.Last().City</p>
+    </div>
+}
+else
+{
+    <div>
+        <span>Leverans och fakturerings adress:</span>
+        <p>Adress: @Model.Customer.Addresses.First().AddressLine</p>
+        <p>Postnummer: @Model.Customer.Addresses.First().PostalCode</p>
+        <p>Postort: @Model.Customer.Addresses.First().City</p>
+    </div>
+}
+
+<h5>Produkter</h5>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Produktnamn</th>
+            <th>Pris</th>
+            <th>Antal</th>
+            <th>Summa</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.OrderItems)
+        {
+            <tr>
+                <td>@item.Product.Name</td>
+                <td>@item.Product.Price</td>
+                <td>@item.Product.Quantity</td>
+                <td>@(item.Product.Quantity* item.Product.Price)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h5>Att betala</h5>
+<h6>
+    @Model.OrderItems.Sum(c => c.Product.Quantity * c.Product.Price)
+</h6>
+<br>
+<a asp-action="Index" asp-controller="Confirmations">Betala</a>
