@@ -1,0 +1,60 @@
+@model domain.Customer
+
+@{
+    ViewData["Title"] = "Uppdatera kund";
+}
+
+<h1>Uppdatera kunduppgifter</h1>
+<div>
+    <form method="post">
+        <div class="form-group">
+            <label for="FirstName" class="control-label">Förnamn:</label>
+            <input type="text" asp-for="FirstName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="LastName" class="control-label">Efternamn:</label>
+            <input type="text" asp-for="LastName" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="Phone" class="control-label">Telefon:</label>
+            <input type="text" asp-for="Phone" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="Email" class="control-label">E-Post:</label>
+            <input type="text" asp-for="Email" class="form-control" />
+        </div>
+        <p></p>
+        <h5>Leveransadress:</h5>
+        <div class="form-group">
+            <label for="Addresses[0].AddressLine" class="control-label">Adress:</label>
+            <input type="text" asp-for="Addresses[0].AddressLine" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="Addresses[0].PostalCode" class="control-label">Postnummer:</label>
+            <input type="text" asp-for="Addresses[0].PostalCode" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="Addresses[0].City" class="control-label">Postort:</label>
+            <input type="text" asp-for="Addresses[0].City" class="form-control" />
+        </div>
+        <p></p>
+        <h5>Faktureringsadress:</h5>
+        <div class="form-group">
+            <label for="Addresses[1].AddressLine" class="control-label">Adress:</label>
+            <input type="text" asp-for="Addresses[1].AddressLine" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="Addresses[1].PostalCode" class="control-label">Postnummer:</label>
+            <input type="text" asp-for="Addresses[1].PostalCode" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="Addresses[1].City" class="control-label">Postort:</label>
+            <input type="text" asp-for="Addresses[1].City" class="form-control" />
+        </div>
+        <br />
+        <div class="form-group">
+            <input type="submit" value="Spara" class="btn btn-primary" />
+        </div>
+    </form>
+</div>

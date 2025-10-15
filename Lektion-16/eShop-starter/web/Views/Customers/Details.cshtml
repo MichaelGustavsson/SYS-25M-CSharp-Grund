@@ -1,0 +1,28 @@
+@model domain.Customer
+
+
+<div><a asp-action="Index">Tillbaka till listan</a></div>
+<h1>Kund uppgifter - @Model.FirstName @Model.LastName</h1>
+
+<div class="container">
+    <span>E-Post:</span><br />
+    <p>@Model.Email</p>
+    <span>Telefon:</span><br />
+    <p>@Model.Phone</p>
+
+    <h5>Leveransadress:</h5>
+    <span>Adress:</span><br />
+    <p>@Model.Addresses[0].AddressLine</p>
+    <span>Postnummer:</span><br />
+    <p>@Model.Addresses[0].PostalCode</p>
+    <span>Postort:</span><br />
+    <p>@Model.Addresses[0].City</p>
+
+    <h5>Fakturaadress:</h5>
+    <span>Adress:</span><br />
+    <p>@Model.Addresses[1].AddressLine</p>
+    <span>Postnummer:</span><br />
+    <p>@Model.Addresses[1].PostalCode</p>
+    <span>Postort:</span><br />
+    <p>@Model.Addresses[1].City</p>
+</div>

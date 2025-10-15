@@ -1,0 +1,47 @@
+@using domain
+@model List<domain.Product>
+
+@{
+    ViewData["Title"] = "Produkter";
+}
+
+<h1>Våra produkter</h1>
+
+<div>
+    <a asp-action="Add">Lägg till ny produkt</a>
+</div>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Artikelnummer</th>
+                <th>Produktnamn</th>
+                <th>Pris</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Product product in Model)
+            {
+                <tr>
+                    <td><a asp-action="AddToCart" asp-route-itemNumber="@product.ItemNumber"><i
+                                class="fa-light fa-cart-shopping"></i></a></td>
+                    <td>@product.ItemNumber</td>
+                    <td>@product.Name</td>
+                    <td>@product.Price</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@product.ItemNumber"><i
+                                class="fa-light fa-pen-to-square"></i></a> |
+                        <a asp-action="Details" asp-route-id="@product.ItemNumber"><i
+                                class="fa-light fa-file-circle-info"></i></a> |
+                        <a asp-action="Delete" asp-route-id="@product.ItemNumber"><i style="color:red"
+                                class="fa-light fa-trash-can"></i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
